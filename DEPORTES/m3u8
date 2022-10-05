@@ -1,0 +1,37 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Canal 1" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/one-706897_960_720.jpg" group-title="deportes",[COLOR white]Canal 1 M.La Liga[/COLOR]
+http://trialnocable.cloud:8080/yonkidani.yonk.ipo/ucln029xp1/13462
+#EXTINF:-1 tvg-name="Canal 2" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/two-706896_960_720.jpg"group-title="deportes",[COLOR white]Canal 2 M.La Liga 1[/COLOR]
+http://trialnocable.cloud:8080/yonkidani.yonk.ipo/ucln029xp1/13459
+#EXTINF:-1 tvg-name="Canal 3" tvg-logo="https://elblogdelinaem.files.wordpress.com/2016/06/nc3bamero-3.jpg" group-title="deportes",[COLOR white]Canal 3 M.La Liga 2[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13458
+#EXTINF:-1 tvg-name="Canal 4" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/four-706894_960_720.jpg" group-title="deportes",[COLOR white]Canal 4 M.LaLiga 3[/COLOR]
+http://trialnocable.cloud:8080/yonkidani.yonk.ipo/ucln029xp1/13455
+#EXTINF:-1 tvg-name="Canal 5" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/five-706893_960_720.jpg" group-title="deportes",[COLOR white]canal 5 #vamos[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13466
+#EXTINF:-1 tvg-name="Canal 6" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/six-706892_960_720.jpg" group-title="deportes",[COLOR white]canal 6 M deportes[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13433
+#EXTINF:-1 tvg-name="Canal 7" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/seven-706891_1280.jpg" group-title="deportes",[COLOR white]canal 7 M dazn 1 FHD[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13470
+#EXTINF:-1 tvg-name="Canal 8" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/eight-706890_960_720.jpg" group-title="deportes",[COLOR white]canal 8 dazn 2[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13483
+#EXTINF:-1 tvg-name="Canal 9" tvg-logo="https://cdn.pixabay.com/photo/2015/04/04/19/13/nine-706889_960_720.jpg" group-title="deportes",[COLOR white]canal 9 dazn 3[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13482
+#EXTINF:-1 tvg-name="Canal 10" tvg-logo="https://st.depositphotos.com/1002881/2529/i/950/depositphotos_25296543-stock-photo-number-ten.jpg" group-title="deportes",[COLOR white]canal 10 dazn 4[/COLOR]
+http://trialnocable.cloud:8080/Jor.g.e.agayonkyvb/j8hdpns6nk/13481
+#EXTINF:-1 tvg-name="Canal 11" tvg-logo="https://st2.depositphotos.com/1011969/6671/i/600/depositphotos_66714411-stock-photo-number-11.jpg" group-title="deportes",[COLOR white]canal 11 dazn f1[/COLOR]
+http://trialnocable.cloud:8080/yonkidani.yonk.ipo/ucln029xp1/13417
+#EXTINF:-1 tvg-name="Canal 12" tvg-logo="https://st2.depositphotos.com/1011969/6671/i/950/depositphotos_66714477-stock-photo-number-12.jpg" group-title="deportes",[COLOR white]canal 12 Tenis 1[/COLOR]
+https://playoutengine.sinclairstoryline.com/playout/b287bd53-b70f-4b04-9096-10a5b5ba9d29/g.m3u8?per
+#EXTINF:-1 tvg-name="Canal 13" tvg-logo="https://st2.depositphotos.com/1011969/6671/i/600/depositphotos_66714443-stock-photo-number-13.jpg" group-title="deportes",[COLOR white]canal 13 Tenis 2[/COLOR]
+https://playoutengine.sinclairstoryline.com:443/playout/febfc709-d9a5-4caa-ab73-1cce0e4bc6e9/g.m3u8?per
+#EXTINF:-1 tvg-name="Canal 14" tvg-logo="https://st2.depositphotos.com/1011969/6671/i/950/depositphotos_66714497-stock-photo-number-14.jpg" group-title="deportes",[COLOR white]canal 14 Tenis 3[/COLOR]
+https://playoutengine.sinclairstoryline.com:443/playout/c05b21c0-e574-4b34-a26e-c6637dbd0fa5/g.m3u8?per
+#EXTINF:-1 tvg-name="Canal 15" tvg-logo="https://st2.depositphotos.com/1011969/6671/i/950/depositphotos_66714493-stock-photo-number-15.jpg" group-title="deportes",[COLOR white]canal 15 Tenis 4[/COLOR]
+https://playoutengine.sinclairstoryline.com:443/playout/735dea87-2128-40b7-8eaa-4252092c6dae/g.m3u8?per
+#EXTINF:-1 tvg-name="Canal 16" tvg-logo="https://st2.depositphotos.com/1011969/6671/i/950/depositphotos_66714355-stock-photo-number-16.jpg" group-title="deportes",[COLOR white]canal 16 sin evento[/COLOR]
+http://nocables.club:8080/yonkidaniyonk.ihb/ukx9p9bfvl/13433
+#EXTINF:-1 tvg-name="Canal 17" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Eurosport_logo.svg/1200px-Eurosport_logo.svg.png" group-title="deportes",[COLOR green]Eurosport[/COLOR]
+http://91.126.141.201:1935/live/eurosport1nntv/chunklist_w65928025.m3u8
+#EXTINF:-1 tvg-name="Canal 18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Eurosport_2_Logo.svg/1200px-Eurosport_2_Logo.svg.png" group-title="deportes",[COLOR green]Eurosport 2[/COLOR]
+http://91.126.141.201:1935/live/eurosport2hdnntv/chunklist_w1420994503.m3u8?

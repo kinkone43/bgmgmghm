@@ -1,0 +1,1255 @@
+<item>
+<title>[COLOR darkorange]La 1[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/la1.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/tve1/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/tve1/</page>
+<referer>https://adictosalatele.com/canales-de-espana/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Antena 3[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/la3.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/antena-3-en-directo-online-gratis/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/antena-3-en-directo-online-gratis/</page>
+<referer>https://adictosalatele.com/canales-de-espana/</referer>
+</regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]Antena 3[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live1/antena3.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/la3.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Cuatro[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/la4.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/lacuatro/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/lacuatro/</page>
+<referer>https://adictosalatele.com/TV/espana/lacuatro/</referer>
+</regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]Telecinco[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live1/telecinco.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/la5.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]La Sexta[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live1/lasexta.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/la6.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]Nova[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live/nova.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/nova.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]Divinity[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live/divinity.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/divinity.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Energy[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/energy.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/energy/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/energy/</page>
+<referer>https://adictosalatele.com/TV/espana/energy/</referer>
+</regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]FDF[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live/fdf.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/fdf.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]Neox[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live/neox.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/neox.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]Mega[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live1/mega3.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/mega.png</thumbnail>
+ </regex>
+</item>
+
+<item>
+ <title>[COLOR darkorange]#0[/COLOR]</title>
+ <link>https:$doregex[secure]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+ <regex>
+ <name>secure</name>
+ <expres>player.js.*\n.*player.*\n.*javascript.*\n.*?Clappr.Player.*\n.*source:.'(.*?)'</expres>
+ <page>https://vergol.com/canales228/live/plus1.php</page>
+ <referer>https://vergol.com/</referer>
+ <post>manzana66:12345</post>
+<thumbnail>https://adictosalatele.com/logos/canal0.png</thumbnail>
+ </regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Estrenos[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://cdn.sincroguia.tv/uploads/images/3/d/m/xmovistar-estrenos.jpg.pagespeed.ic.8-DPOUNHex.jpg</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'http://adictosalatele.com/TV/espana/movistar-estrenos/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>http://adictosalatele.com/TV/espana/movistar-estrenos/</page>
+<referer>http://adictosalatele.com/TV/espana/movistar-estrenos/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Accion[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/movistaraccion.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/movistar-accion/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/movistar-accion/</page>
+<referer>https://adictosalatele.com/TV/espana/movistar-accion/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Drama[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/movistardrama.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/movistar-drama/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/movistar-drama/</page>
+<referer>https://adictosalatele.com/TV/espana/movistar-drama/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Comedia[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/movistarcomedia.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/movistar-comedia/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/movistar-comedia/</page>
+<referer>https://adictosalatele.com/TV/espana/movistar-comedia/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Dcine esp[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/dcinen.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/dcineespanol/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/dcineespanol/</page>
+<referer>https://adictosalatele.com/TV/espana/dcineespanol/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Series[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/movistarseries.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/movistar-series/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/movistar-series/</page>
+<referer>https://adictosalatele.com/TV/espana/movistar-series/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]SeriesMania[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/seriesmania.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/movistar-seriesmania/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/movistar-seriesmania/</page>
+<referer>https://adictosalatele.com/TV/espana/movistar-seriesmania/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Fox[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/fox.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/fox/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/fox/</page>
+<referer>https://adictosalatele.com/TV/espana/fox/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Fox Life[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/foxlife.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/fox-life/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/fox-life/</page>
+<referer>https://adictosalatele.com/TV/espana/fox-life/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]AXN[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/axn.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/axn/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/axn/</page>
+<referer>https://adictosalatele.com/TV/espana/axn/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]TNT[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/tnt.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/axn/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/tnt/</page>
+<referer>https://adictosalatele.com/TV/espana/tnt/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]AMC[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/amc.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/amc/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/amc/</page>
+<referer>https://adictosalatele.com/TV/espana/amc/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]CALLE 13[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/calle13.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/calle13/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/calle13/</page>
+<referer>https://adictosalatele.com/TV/espana/calle13/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]SYFY[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/syfy.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/syfy/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/syfy/</page>
+<referer>https://adictosalatele.com/TV/espana/syfy/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Hollywood[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/hollywood.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/hollywood/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/hollywood/</page>
+<referer>https://adictosalatele.com/TV/espana/hollywood/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]TCM[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/tcm.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/tcm/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/tcm/</page>
+<referer>https://adictosalatele.com/TV/espana/tcm/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Dark[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/dark.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/dark/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/dark/</page>
+<referer>https://adictosalatele.com/TV/espana/dark/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Xtrem[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/xtrm.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/xtrm/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/xtrm/</page>
+<referer>https://adictosalatele.com/TV/espana/xtrm/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]Comedy central[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/comedycentral.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/comedy-central/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/comedy-central/</page>
+<referer>https://adictosalatele.com/TV/espana/comedy-central/</referer>
+</regex>
+</item>
+ 
+<item>
+<title>[COLOR darkorange]MTV[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/mtv.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/mtv/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/mtv/</page>
+<referer>https://adictosalatele.com/TV/espana/mtv/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Crimen e Investigacion[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/ci.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/ci/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/ci/</page>
+<referer>https://adictosalatele.com/TV/espana/ci/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Blaze[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/blaze.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/blaze/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/blaze/</page>
+<referer>https://adictosalatele.com/TV/espana/blaze/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]NatGeo[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/nationalgeographic.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/nat-geo/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/nat-geo/</page>
+<referer>https://adictosalatele.com/TV/espana/nat-geo/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]History[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/history.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/history/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/history/</page>
+<referer>https://adictosalatele.com/TV/espana/history/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Dmax[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/dmax.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/discovery-max/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/discovery-max/</page>
+<referer>https://adictosalatele.com/TV/espana/discovery-max/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Discovery Channel[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/discoverychannellatino.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/discovery-channel/ ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/discovery-channel/</page>
+<referer>https://adictosalatele.com/TV/espana/discovery-channel/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]La Liga[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/laliga.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/movistar-laliga/live.php ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/movistar-laliga/live.php</page>
+<referer>https://adictosalatele.com/TV/deportes/movistar-laliga/live.php</referer>
+</regex>
+</item>
+
+<item>
+<title> [COLOR blue]M LIGA CAMPEONES[/COLOR]</title>
+<thumbnail>https://i1.wp.com/jungle-team.com/wp-content/uploads/2019/07/Picon-movistar-LaLiga.png</thumbnail>
+<link>$doregex[geturl]|User-Agent=Mozilla/5.0 (Android 7.0; Tablet; rv:58.0.2) Gecko/58.0.2 Firefox/58.0.2</link>
+<regex>
+<name>geturl</name>
+<expres>source:"(.*?)"</expres>
+<page>$doregex[getunpacked]</page>
+</regex>
+<regex>
+<name>getunpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[pagina]</page>
+<referer>https://adictosalatele.com</referer>
+<connection>keep-alive</connection>
+</regex>
+<regex>
+<name>pagina</name>
+<expres>iframe.*?src="(.*?)"</expres>
+<page>https://adictosalatele.com/TV/deportes/movistar-ligacampeones/</page>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]La Liga de Campeones[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/campeones.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/movistar-ligacampeones/live.php ','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/movistar-ligacampeones/live.php</page>
+<referer>https://adictosalatele.com/TV/deportes/movistar-ligacampeones/live.php</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]FoxSports[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/fox-sports-premium1.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/latinos/fox-sports-premium/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/latinos/fox-sports-premium/</page>
+<referer>https://adictosalatele.com/TV/latinos/fox-sports-premium/</referer>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR darkorange]M Deportes[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/deportes.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/movistar-deportes/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/movistar-deportes/</page>
+<referer>https://adictosalatele.com/TV/deportes/movistar-deportes/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Danz[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/dazn.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/dazn/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/dazn/</page>
+<referer>https://adictosalatele.com/TV/deportes/dazn/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Vamos[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/vamos.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/vamos/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/vamos/</page>
+<referer>https://adictosalatele.com/TV/deportes/vamos/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]#0[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/canal0.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/canal-0-plus/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/canal-0-plus/</page>
+<referer>https://adictosalatele.com/TV/espana/canal-0-plus/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]M Golf[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/golf.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/movistar-golf/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/movistar-golf/</page>
+<referer>https://adictosalatele.com/TV/deportes/movistar-golf/</referer>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR darkorange]M F1[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/formula1.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/formula1/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/formula1/</page>
+<referer>https://adictosalatele.com/TV/deportes/formula1/</referer>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR darkorange]Eurosport 1[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/eurosport1.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/eurosport1/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/eurosport1/</page>
+<referer>https://adictosalatele.com/TV/deportes/eurosport1/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Eurosport 2[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/eurosport2.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/deportes/eurosport2/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/deportes/eurosport2/</page>
+<referer>https://adictosalatele.com/TV/deportes/eurosport2/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Caza y Pesca[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/cazaypesca.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/espana/caza-pesca/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/espana/caza-pesca/</page>
+<referer>https://adictosalatele.com/TV/espana/caza-pesca/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Cazavision[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/cazavision.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosalatele.com/TV/latinos/cazavision/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosalatele.com/TV/latinos/cazavision/</page>
+<referer>https://adictosalatele.com/TV/latinos/cazavision/</referer>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR darkorange]Teledeporte[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/teledeporte.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+  link=re.findall('iframe\s*src=[\'"](.*?)[\'"]', page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://adictosaldeporte.com/TV/deportes/teledeporte/','accept':'*/*'}, verify=False).content
+  source=jsunpack.unpack(re.findall('(?s)(eval\(function\(p,a,c,k,e,d\).*?)</script>',source)[0]).replace('\\', '')
+  u = re.findall('(?:source|src|file):.*?[\'"]([^\'"]+)',source)[0].decode('base64')
+  u2 = u.decode('base64')
+  u3 = u2.decode('base64')
+  u4 = u3.decode('base64').replace('espare.tk', '23.237.173.109')
+  return u4
+]]></expres>
+<page>https://adictosaldeporte.com/TV/deportes/teledeporte/</page>
+<referer>https://adictosaldeporte.com/TV/deportes/teledeporte/</referer>
+</regex>
+</item>
+
+<item>
+<title>[COLOR darkorange]Eltoro[/COLOR]</title>
+<link>$doregex[get_unpaked]</link>
+<thumbnail>https://adictosalatele.com/logos/intereconomia.png</thumbnail>
+<regex>
+<name>get_unpaked</name>
+<expres>source: '(.+?)'</expres>
+<page>https://adictosalatele.com/TV/espana/intereconomia/</page>
+<referer>https://adictosalatele.com/TV/espana/intereconomia/</referer>
+</regex>
+</item>

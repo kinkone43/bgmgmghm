@@ -1,0 +1,49 @@
+
+
+<title>[COLOR white]Torrents[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://www.redeszone.net/app/uploads-redeszone.net/2018/04/velocidad-descarga-torrents.jpg</thumbnail>
+<fanart>https://i.imgur.com/NhzKkad.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/MiSalon2.0/master/PELICULAS/Torrents</externallink>
+<Info>Necesario elementum para ver peliculas por torrent</Info>
+</item>
+
+<title>[COLOR red]ESTRENOS[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://i.imgur.com/NXZoiYw.jpg</thumbnail>
+<fanart>https://i.imgur.com/NhzKkad.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/MiSalon2.0/master/PELICULAS/ESTRENOS.xml</externallink>
+<Info>Películas de Estreno con buena calidad para ver cuando quieras</Info>
+</item>
+
+ <title>[COLOR red]VIDEOCLUB 4K[/COLOR] </title>
+        <link>_</link>
+        <externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/4K%20/pruebas4K.xml</externallink>
+<Info>Realizando pruebas para subir contenido 4K</Info>
+<thumbnail>https://img2.freepng.es/20180711/ktb/kisspng-4k-resolution-ultra-high-definition-television-dis-4k-uhd-logo-5b460c951a1344.3895293615313173971068.jpg</thumbnail>
+<fanart>https://www.xtrafondos.com/en/descargar.php?id=4414&resolucion=3840x2160</fanart>
+ </item>
+
+<title>[COLOR white]SAGAS[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://media.resources.festicket.com/image/372x525/center/middle/filters:quality(70)/www/photos/12225-poster.jpg</thumbnail>
+<fanart>https://sagafestival.com/wp-content/uploads/2019/12/SAGA-Festival-Logo.png</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/PELICULAS/MENUSAGAS</externallink>
+<Info>Varias peliculas del mismo grupo</Info>
+</item>
+<item>
+<title>[COLOR red]Videoclub[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://i.imgur.com/KIVjRwI.png</thumbnail>
+<fanart>https://i.imgur.com/KIVjRwI.png</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/PELICULAS/Peliculas.xml</externallink>
+<Info>Películas de Estreno con buena calidad para ver cuando quieras</Info>
+</item>
+
+<title>[COLOR white]Videoclub infantil[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://www.conmishijos.com/assets/posts/1000/1237-peliculas-infantiles-oscar.jpg</thumbnail>
+<fanart>https://i.imgur.com/NhzKkad.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/PELICULAS/Peliculas%20infantiles.xml</externallink>
+<Info>Catalogo de peliculas para los mas pequeños de la casa </Info>
+</item>

@@ -1,0 +1,141 @@
+ <item>
+<title>[COLOR red]DailySport[/COLOR]</title>
+<info>Web dailysport</info>
+<thumbnail>https://media.info/i/lf/300/1405339467/1567.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange][B][makelist.param1][/B][/COLOR] - [COLOR white][makelist.param2][/COLOR][COLOR lime] [makelist.param3] [/COLOR][COLOR gold][makelist.param5][/COLOR]</title>
+<fanart>https://i.imgur.com/kHOtn4i.jpg</fanart>
+<link>$doregex[get-decode]|User-Agent=iPad</link>
+<thumbnail>https://media.info/i/lf/300/1405339467/1567.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[.tr><th>(.*?)</|.tr>\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n|href="(.*?)">(.*?)<]]></expres>
+<page>https://dailysport.bar/</page>
+</regex>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>(?s)initClapprPlayer.*?atob\("([^"]+).*?plugins</expres>
+<page>https://dailysport.bar/[makelist.param4]</page>
+</regex>
+ </item>
+ 
+ 
+ 
+ 
+ <item>
+<title>[COLOR red]DailySport opcion 2[/COLOR]</title>
+<info>Web dailysport</info>
+<thumbnail>https://media.info/i/lf/300/1405339467/1567.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR red][B][makelist.param1][/B][/COLOR] - [COLOR white][makelist.param2][/COLOR][COLOR lime] [makelist.param3] [/COLOR][COLOR gold][makelist.param5][/COLOR]</title>
+<fanart>https://i.imgur.com/kHOtn4i.jpg</fanart>
+<link>$doregex[get-decode]|User-Agent=iPad</link>
+<thumbnail>https://media.info/i/lf/300/1405339467/1567.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[.tr><th>(.*?)</|.tr>\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n|href="(.*?)">(.*?)<]]></expres>
+<page>https://dailysport.bar/</page>
+</regex>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>(?s)initClapprPlayer.*?atob\("([^"]+).*?plugins</expres>
+<page>https://dailysport.bar/[makelist.param4]</page>
+</regex>
+ </item>
+ 
+ 
+ 
+ <item>
+<title>[COLOR blue]Dailysport opcion 3[/COLOR]</title>
+<info>Web dailysport</info>
+<thumbnail>https://media.info/i/lf/300/1405339467/1567.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+ <link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR red][makelist.param1][/COLOR][COLOR yellow] [makelist.param2][/COLOR] [COLOR white][makelist.param3][/COLOR][COLOR red] [makelist.param5][/COLOR]</title>
+<thumbnail>https://upload.wikimedia.org/wikinews/en/1/18/DailySport_logo.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+<link>$doregex[get-decode]|User-Agent=iPad</link>
+<thumbnail>https://upload.wikimedia.org/wikinews/en/1/18/DailySport_logo.png</thumbnail>
+<fanart>https://www.scamcard.com/images/Daily%20Sport%202011.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<tr><th>(.+?)</th></tr>|<td>(\d.*?)</td>.*?<td>(.+?)</td>|href="(.+?)">(.+?)<]]></expres>
+<page>https://dailysport.bar/</page>
+</regex>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>(?s)initClapprPlayer.*?atob\("([^"]+).*?plugins</expres>
+<page>https://dailysport.bar/[makelist.param4]</page>
+</regex>
+ </item>
+ 
+
+ 
+<item>
+<title>[COLOR darkorange]DailySport opcion 4[/COLOR]</title>
+<info>Se actualiza diariamente</info>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange][B][makelist.param1][/B][/COLOR][COLOR white][makelist.param2][/COLOR][COLOR lime] [makelist.param3] [/COLOR][COLOR gold][makelist.param5][/COLOR] </title>
+<link>$doregex[get-decode]|User-Agent=iPad</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://dailysport.bar/'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://dailysport.bar/'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('(?s)<td><b>(.+?)</b>|<td>(\d{1,2}.*?)</td>\s.*?<td>(.*?)</td>|<td><a href="(.+?)">(.+?)</a></td>', extraer.text)
+    return links
+]]></expres>
+<page></page>
+<referer>https://dailysport.bar/</referer>
+<cookieJar>__cfduid=d328bf84a9e848be74037db6c007368251608050648</cookieJar>
+</regex>
+
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-enctext</name>
+<expres>(?s)initClapprPlayer.*?atob\("([^"]+).*?plugins</expres>
+<page>https://dailysport.bar/[makelist.param4]</page>
+</regex>
+ </item>

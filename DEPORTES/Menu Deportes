@@ -1,0 +1,116 @@
+<item>
+<title>[COLOR red]Acestream[/COLOR] </title>
+<link>_</link>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/DEPORTES/Acestream</externallink>
+<Info>Buscar contenido especifico</Info>
+<thumbnail>https://lh3.googleusercontent.com/crgmI3z8Rq36RHTfFdpVVP44xMwkt7HUhqQkYOyxLTZwve7MjnmU-gaCNdZSBds8p4i3</thumbnail>
+<fanart>https://www.testdevelocidad.es/app/uploads/2017/08/acestream.jpg</fanart>
+</item>
+
+
+
+<title>[COLOR blue]Enlaces WEBS[/COLOR] </title>
+<link>_</link>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/DEPORTES/webs</externallink>
+<Info>Series de [COLOR blue]Web para ver el deporte via web a traves de tu KODI[/COLOR]</Info>
+<thumbnail>https://www.cualsitioweb.com/wp-content/uploads/webs-logo.png</thumbnail>
+<fanart>https://ep00.epimg.net/tecnologia/imagenes/2016/03/14/actualidad/1457954626_707257_1457955007_noticia_normal.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR red]lista m3u8[/COLOR] </title>
+<link>_</link>
+<externallink>https://raw.githubusercontent.com/OPIBOX/MiSalon2.0/master/DEPORTES/m3u8</externallink>
+<Info>Canales m3u8</Info>
+<thumbnail>https://lh3.googleusercontent.com/LGHIZxwN8QnPumkVCDMXPWbXvmy_26M-M3AjcpMqGdywhlAMtkDtU1SS0Sd1J917YgI</thumbnail>
+<fanart>https://lh3.googleusercontent.com/LGHIZxwN8QnPumkVCDMXPWbXvmy_26M-M3AjcpMqGdywhlAMtkDtU1SS0Sd1J917YgI</fanart>
+</item>
+
+
+
+ 
+ 
+<title>[COLOR blue]SportZOnline[/COLOR]</title>
+<info>web Sport Z Online</info>
+<thumbnail>https://c1.staticflickr.com/9/8740/17060309785_383786b9bb_c.jpg</thumbnail>
+<fanart>https://c1.staticflickr.com/9/8740/17060309785_383786b9bb_c.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[COLOR red][makelist.param1][/COLOR]</title>
+<thumbnail>https://c1.staticflickr.com/9/8740/17060309785_383786b9bb_c.jpg</thumbnail>
+<fanart>https://c1.staticflickr.com/9/8740/17060309785_383786b9bb_c.jpg</fanart>
+  <link>$doregex[geturl]</link>
+]]></listrepeat>
+<expres>(\d\d:\d\d\s.+?\s.+?)\|\s(.+?).php</expres>
+<page>https://v6.sportzonline.to/prog.txt</page>
+</regex>
+
+<regex>
+<name>geturl</name>
+<expres>source:"(.*?)"</expres>
+<page>$doregex[getunpacked]</page>
+</regex>
+<regex>
+<name>getunpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>http:$doregex[getEnc]</page>
+<referer>[makelist.param2].php</referer>
+</regex>
+ <regex>
+<name>getEnc</name>
+<expres><![CDATA[iframe.*?src="(.*?)"]]></expres>
+<page>[makelist.param2].php</page>
+</regex>
+</item>
+
+
+
+
+
+
+ 
+   <title>[COLOR blue]Daddy live(VPN)[/COLOR]</title>
+   <link>$doregex[makelist]</link>
+   <info>web Daddy live</info>
+   <thumbnail>https://thumbs.dreamstime.com/z/equipo-de-deportes-18728421.jpg</thumbnail>
+   <fanart>https://thumbs.dreamstime.com/z/equipo-de-deportes-18728421.jpg</fanart>
+    <regex>
+      <name>makelist</name>
+      <listrepeat><![CDATA[
+        <title>[COLOR red][makelist.param1] [COLOR blue][makelist.param2] [COLOR white] [makelist.param4][/COLOR]</title>
+        <link>$doregex[url]|User-Agent=iPad</link>
+        <thumbnail>https://thumbs.dreamstime.com/z/equipo-de-deportes-18728421.jpg</thumbnail>
+        <fanart>https://thumbs.dreamstime.com/z/equipo-de-deportes-18728421.jpg</fanart>
+      ]]></listrepeat>
+      <expres>>(\d\d:\d\d)\s(.*?)<.*?|a href="(.*?)".*?#ff0000;">(.*?)<</expres>
+      <page>https://daddylive.live/index.php</page>
+      <referer>https://daddylive.co/</referer>
+    </regex>
+    
+       <regex>
+      <name>url</name>
+      <expres>source:\s*"([^"]+)</expres>
+      <page>$doregex[unpack]</page>
+    </regex>
+    <regex>
+      <name>unpack</name>
+      <expres>$pyFunction:get_unpacked(page_data,'(?s)(eval\(function\(p,a,c,k,e,d.*?)&lt;/.+')</expres>
+      <page>$doregex[url2]</page>
+      <referer>https://daddylive.co/</referer>
+    </regex>
+    <regex>
+      <name>url2</name>
+      <expres>iframe\s*src="([^"]+)</expres>
+      <page>[makelist.param3]</page>
+      <referer>https://daddylive.co/</referer>
+    </regex>
+  </item>
+  
+  
+  
+  
+  
+ 

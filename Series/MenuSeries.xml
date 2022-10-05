@@ -1,0 +1,56 @@
+<item>
+<title>[COLOR blue]Movistar[/COLOR]</title>
+<link>http://ignorame</link>http://www.larambleta.com/fi
+<thumbnail>http://www.larambleta.com/files/large/9edfe3c658a7140</thumbnail>
+<fanart>https://s03.s3c.es/imag/_v0/770x420/9/5/c/showtime-movistar-acuerdo.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/Series/SeriesMovistar.xml</externallink>
+<Info>Catalogo de Series de movistar+</Info>
+</item>
+<item>
+<title>[COLOR red]Netflix[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png</thumbnail>
+<fanart>https://wallpapercave.com/wp/wp1917124.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/MiSalon2.0/master/Series/SeriesdeNetflix</externallink>
+<Info>Catalogo de series de Netflix</Info>
+</item>
+<item>
+<title>[COLOR white]HBO[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/1280px-HBO_logo.svg.png</thumbnail>
+<fanart>http://screentalk.com.au/wp-content/uploads/2019/02/HBO-Berry-Silicon-Valley.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/Series/SeriesHBO.xml</externallink>
+<Info>Catalogo de series de HBO </Info>
+</item>
+<item>
+<title>[COLOR white]Amazon [/COLOR][COLOR blue]Prime Vídeo [/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/411j1k1u9yL.png</thumbnail>
+<fanart>https://style.shockvisual.net/wp-content/uploads/2019/04/Amazon-Prime-Video.png</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/Series/SeriesPrime.xml</externallink>
+<Info>Catalogo de series de Amazon prime vídeo  </Info>
+</item>
+<item>
+<title>[COLOR white]+ Series[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://drugfree.org/wp-content/uploads/2015/02/Television-2-17-15.jpg</thumbnail>
+<fanart>http://ruidodemedios.com.ar/wp-content/uploads/2017/10/original.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/Series/%2BSeries.xml</externallink>
+<Info>Catalogo de series premium del resto de plataformas</Info>
+</item>
+
+<title>[COLOR white]Series Retro[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://media.gettyimages.com/vectors/old-style-tv-set-vector-id472282775?s=2048x2048</thumbnail>
+<fanart>https://aguilarsoluciones.com/portal/blogs/wp-content/uploads/sites/2/2015/11/post_header_series_retro-777x437.png</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/Series/SERIES_Retro/MenuRetro</externallink>
+<Info>Catalogo de series antiguas</Info>
+</item>
+
+<title>[COLOR white]Anime[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://i.pinimg.com/236x/f5/57/19/f55719f6efae22c5f20aa3af4fa9ede2--my-neighbor-totoro-deadman-wonderland.jpg</thumbnail>
+<fanart>https://escolaeducacao.com.br/wp-content/uploads/2019/07/capa-18-750x430.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/OPIBOX/OPIBOX.1.3/master/Series/anime%20/Menuanime.xml</externallink>
+<Info>Animación tradicional o por computadora de procedencia japonesa</Info>
+</item>

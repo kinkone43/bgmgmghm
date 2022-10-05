@@ -1,0 +1,44 @@
+<item>
+<title>Buscar Peliculas</title>
+<link>$doregex[primer]</link>
+<regex>
+<name>primer</name>
+<listrepeat><![CDATA[
+<title>[primer.param3]    [primer.param4]</title>
+<link>$doregex[enlace]</link>
+<thumbnail>[primer.param2]</thumbnail>
+<fanart>[primer.param2]</fanart>
+]]></listrepeat>
+<expres>(?s)title='.*?($doregex[buscador]).*?'.*?src='(.*?)'.*?alt='(.*?)'.*?hraf='(.*?)'<expres>
+<page></page>
+</regex>
+  <regex>
+<name>buscador</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+   dialog = xbmcgui.Dialog()
+   d = dialog.input('Buscador de Series', type=xbmcgui.INPUT_ALPHANUM).replace(" ", ".").replace("í", ".")
+   return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+ <name>enlace</name>
+<expres><![CDATA[#$pyFunction
+import urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = '[primer.param4]'
+ streamLink = urlresolver.resolve(url)
+ return streamLink
+]]></expres>
+ <page></page>
+<cookieJar></cookieJar>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<Referer></Referer>
+<Accept>*/*</Accept>
+</regex>
+</item>
